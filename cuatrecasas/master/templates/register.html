@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block title %} Registration {% endblock %}
+    {% load i18n %}
+      {% block register_content %}
+        
+            <!-- <img src="../static/img/bg_image.png"> -->
+            <div class="content-holder">
+                    
+                <div class="">
+                     <form class="content_container" action="{% url 'index' %}">
+                       <h3 class="text-center">{%trans "Registro" %}</h3>
+                       <div>
+                       <p class="form_subhead">{%trans "Datos personales y de contacto" %}</p>
+                       <div>
+                       <div class="">
+                            <div class="half_content">
+                                <div class="form-group">
+                                  <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="DNI/NIF/NIE/Pasaporte">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Genero">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Tel.movil">
+                                </div>
+                                </div> <!-- half_content ends -->
+                                <div class="half_content">
+                                <div class="form-group">
+                                  <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Apellidos">
+                                </div>
+                                <div class="form-group">
+                                  <input type="email"  class="form-control" id="formGroupExampleInput" placeholder="Fecha Nacimiento">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Grupo sanguineo">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Tel.oficina">
+                                </div>                    
+                            </div> <!-- half_content ends -->
+                                <div>
+                                    <p class="form_subhead">{%trans "Datos deportivos" %}</p>
+                                </div>
+                                <div>
+                                    <div class="half_content_nopad">
+                                        <div class="form-group tiny_input half_content">
+                                            <label for="">{%trans "Tall Maillot:" %}</label>
+                                            <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Xs">
+                                        </div>
+                                        <div class="form-group tiny_input half_content">
+                                            <label for="">{%trans "Tall camiseta:" %}</label>
+                                            <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Xs">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="half_content">
+                                    <div class="form-group">
+                                      <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Federacion">
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Chip Amaillo">
+                                    </div>
+                                </div> <!-- half_content ends -->
+                                <div class="half_content">
+                                    <div class="form-group">
+                                      <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Num. federado">
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Grupo sanguineo">
+                                    </div>                    
+                            </div> <!-- half_content ends -->
+                            <div>
+                                <p class="">{%trans "Me interesa:" %}</p>
+                            </div>
+                            <div class="form-group full_input half_content">
+                                <label for="">{%trans "Correr:" %}</label>
+                                <label class="containers">{%trans "Asfalto" %}
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="containers">{%trans "Montana" %}
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-group full_input half_content">
+                                <label for="">{%trans "Bicicleta:" %}</label>
+                                <label class="containers">{%trans "Carretera" %}
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="containers">{%trans "BTT" %}
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-group full_input half_content">
+                                <label for="">{%trans "Nadar:" %}</label>
+                                <label class="containers">{%trans "Piscina" %}
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="containers">{%trans "Marnaton" %}
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-group full_input half_content">
+                                <label for="">{%trans "Cabinar:" %}</label>
+                                <label class="containers">{%trans "Urbano" %}
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="containers">{%trans "Montana" %}
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            
+                            <div>
+                                <div class="form-group full_input">
+                                    <label for="">{%trans "Otros:" %}</label>
+                                    <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="">
+                                </div>                                       
+                                
+                            </div>
+                            <div>
+                                    <p class="form_subhead">{%trans "Datos deportivos" %}</p>
+                                </div>
+                            <div class="half_content">
+                                <div class="form-group">
+                                  <input type="email"  class="form-control" id="formGroupExampleInput" placeholder="e-mail">
+                                </div>
+                                <div class="form-group">
+                                  <input type="password"  class="form-control" id="formGroupExampleInput" placeholder="Password">
+                                </div>
+                                </div> <!-- half_content ends -->
+                                <div class="half_content">
+                                <div class="form-group">
+                                  <input type="email"  class="form-control" id="formGroupExampleInput" placeholder="repite e-mail">
+                                </div>
+                                <div class="small_check">
+                                <label class="contain">{%trans "Accepto las condiciones de uso politica de privacidad" %}
+                                  <input type="checkbox" checked="checked">
+                                  <span class="checkmarked"></span>
+                                </label> 
+                                </div>                   
+                            </div> <!-- half_content ends -->
+                            <div class="reg_pad text-center">
+                                <button type="submit" class="reg_button"><strong>{%trans "REGISTRARME" %}</strong></button>
+                            </div>
+                            
+
+
+                                <!-- <button type="submit" class="btn login_button center_block"><strong>ACCEDER</strong></button>
+                                <a  href="#" class="log_link"><strong>Recorder clave de acceso</strong></a> -->
+                            
+                            
+                        </div> <!--  -->
+                      </form> 
+                </div>
+            </div> <!-- content holder ends -->
+           
+        </div>
+    {% endblock %} 
