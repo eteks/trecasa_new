@@ -305,13 +305,13 @@ form label
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 5px;
 }
 
 /* On mouse-over, add a grey background color */
 .contain:hover input ~ .checkmarked {
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -333,15 +333,16 @@ form label
 
 /* Style the checkmark/indicator */
 .contain .checkmarked:after {
-  left: 9px;
+  left: 10px;
   top: 5px;
-  width: 5px;
+  width: 7px;
   height: 10px;
   border: solid #000;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  padding-top:10px;
 }
 .small_check 
 {
