@@ -1,3 +1,30 @@
+/*FONTS*/
+/*@import "https://fonts.googleapis.com/css?family=Titillium Web";*/
+@font-face 
+{
+    font-family: cuatrecasaslogo_bold;
+    src: url(../fonts/CuatrecasasLogo-Bold.otf);
+}
+@font-face 
+{
+    font-family: cuatrecasastext_bold;
+    src: url(../fonts/CuatrecasasText-Bold.otf);
+}
+@font-face 
+{
+    font-family: cuatrecasastext-boldtalic;
+    src: url(../fonts/CuatrecasasText-BoldItalic.otf);
+}
+@font-face 
+{
+    font-family: cuatrecasastext_regular;
+    src: url(../fonts/CuatrecasasText-Regular.otf);
+}
+@font-face{
+    font-family:'cuatrecasastext_regularitalic';
+    src:url(../fonts/CuatrecasasText-RegularItalic.otf);
+}
+
 body, html 
 {
     
@@ -37,7 +64,8 @@ body, html
 }
 .nav_bar_right, .top-right
 {
-    float: right;    
+    float: right; 
+    font-family: cuatrecasastext_regular;   
 }
 .nav_bar_right a
 {
@@ -63,10 +91,18 @@ body, html
     border: none;
 }
 /*FORM*/
+form
+{
+  font-family: cuatrecasastext_regular;
+}
 form p
 {
     padding-left: 16px;
     color: white;
+}
+form h3
+{
+  font-family: cuatrecasastext_bold;
 }
 form label
 {
@@ -78,6 +114,7 @@ form label
 {
     font-size: 16px;
     font-weight: bold;
+    font-family: cuatrecasastext_bold;
 }
 .form_slider 
 {
@@ -332,6 +369,7 @@ form label
 .three_fourth p, .half_55 p
 {
     font-size: 18px;
+    line-height: 1.6em;
 }
 .three_fourth a, .half_55 a
 {
@@ -343,6 +381,10 @@ form label
 .three_fourth a:hover, .half_55 a:hover
 {
     color: #f74552;
+}
+.three_fourth h2, .three_fourth span, .half_55 h2, .three_fourth p, .half_55 p, .three_fourth a, .half_55 a, .list_title,.left_list, .footer a, .top-left
+{
+  font-family: cuatrecasastext_regular;
 }
 /****************************
    layout
@@ -372,6 +414,7 @@ form label
    color:#000;
    text-decoration: none;
    font-size:16px;
+   font-family: cuatrecasastext_regular;
 }
 .top-right .right_border 
 {
@@ -412,6 +455,7 @@ form label
   border-bottom-left-radius: 7px;
   background-color: #b2b3b3;
   padding: 0;
+  font-family: cuatrecasastext_regular;
 }
 .menu_bar .inner li
 {
@@ -606,12 +650,19 @@ div.desc {
   font-size: 16px;
   margin:0;
   padding:0;
+  font-family: cuatrecasaslogo_bold;
 }
 .gallery p
 {
   font-size: 14px;
   margin: 0;
   padding: 2px 0;
+  font-family: cuatrecasastext_regular;
+}
+.desc p span
+{
+  font-size: 10px;
+  font-family:'cuatrecasastext_regularitalic';
 }
 .days
 {
@@ -626,12 +677,26 @@ div.desc {
    width: 25px;
    float: right;
 }
+.italic
+{
+  font-family: cuatrecasastext_regularitalic !important;
+}
+.bolds
+{
+  font-family: cuatrecasastext_bold !important;
+}
+.bolds_activid
+{
+  font-family: cuatrecasastext_bold !important;
+  font-size: 14px !important;
+}
   /*GYMBCN Page*/
   .documentos
   {
     background-color: #f74552;
     padding: 12px;
     margin: 10px 0px;
+    font-family: cuatrecasastext_bold;
   }
   .documentos a
   {
@@ -795,6 +860,7 @@ div.desc {
 {
   background-color: #d9dada;
   padding:15px;
+  font-family: cuatrecasastext_regular;
 }
 .red
 {
