@@ -1,0 +1,78 @@
+  <div class="footer">
+            <div class="content-holder">
+                <ul class="footer_left">
+                    <li><img class="footer_left_img" src="../static/img/footer_logo.png"></li>
+                    <li><a href="#" class="footer_copyright_web">Copyright Cuatrecasas Sports Club | Todos los derechos reservados</a></li>
+                </ul>
+                <ul class="footer_right">
+                    <li><a class="social_icon" href ="#"><i class="fa fa-pinterest fa-1x" aria-hidden="true"></i></a></li>
+                    <li><a class="social_icon" href ="#"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></a></li>      
+                    <li><a class="social_icon" href ="#"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a></li>
+                    <li><a class="social_icon" href ="#"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a></li>
+                    <li><a class="social_icon" href ="#"><i class="fa fa-youtube fa-1x" aria-hidden="true"></i></a></li>
+                    <li><a class="social_icon" href ="#"><i class="fa fa-google-plus fa-1x" aria-hidden="true"></i></a></li>
+                </ul>
+                    <div class="clear_both"></div>
+                     <ul class="footer_copyright_outer">
+                        <li><a href="#" class="footer_copyright">Copyright Cuatrecasas Sports Club | Todos los derechos reservados</a></li>
+                     </ul>
+                    <div class="clear_both"></div>
+            </div>
+        </div>
+        <!-- Active Class -->
+        <script type="text/javascript">
+          $(document).ready(function() {
+          // get current URL path and assign 'active' class
+          var pathname = window.location.pathname;
+          $('#navbar_inner > li > a[href="'+pathname+'"]').parent().addClass('active');
+          var pathname = window.location.pathname;
+          $('#navbar_inner_sub > li > a[href="'+pathname+'"]').parent().addClass('active');
+          
+            $(".historica").click(function()
+            {
+                $(".historica_inner").toggle();
+            });
+            $(".historica_inner").hide();
+        })
+          
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function () 
+            {
+                // I18N Calendar
+                $('.language-calendar').each(function () {
+                    var $this = $(this);
+                    var lang = $this.data('lang');
+                    $this.pignoseCalendar({
+                        lang: lang
+                    });
+                });
+
+                // This use for DEMO page tab component.
+                $('.menu .item').tab();
+            });
+            //]]>
+        </script>
+         <script>
+      $(document).ready(function() {
+          $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+              enabled: true,
+              navigateByImgClick: true,
+              preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+              tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+              titleSrc: function(item) {
+                return item.el.attr('title') + '<small>12/04/2018</small>';
+              }
+            }
+          });
+          $(".zoom").insertAfter(".mfp-bottom-bar");
+        });
+      </script>
